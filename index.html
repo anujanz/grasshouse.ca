@@ -4,6 +4,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <div
@@ -54,18 +55,36 @@
         li {
           display: inline;
         }
+        
       </style>
       <nav>
-        <ul>
-          <li><a href="#">Featured</a></li>
-          <li><a href="#">Flower</a></li>
-          <li><a href="#">Vapes</a></li>
-          <li><a href="#">Extracts</a></li>
-          <li><a href="#">Edibles</a></li>
-          <li><a href="#">Accessories</a></li>
-          <li><a href="aboutus.html">About us</a></li>
-        </ul>
+
+
+
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Featured</a>
+  <a href="#news">Flower</a>
+  <a href="#contact">Vapes</a>
+  <a href="#about">Extracts</a>
+  <a href="#about">Edibles</a>
+  <a href="#about">Accessories</a>
+  <a href="#about">About Us</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
       </nav>
+      
     </section>
     <picture>
       <source media="(min-width: 650px)" srcset="topquality.jpg" />
@@ -226,5 +245,6 @@
       <li><a href="faq.html">FAQ</a></li>
       <li><a href="aboutus.html">About us</a></li>
     </ul>
+    <script src ="styles.js"></script>
   </body>
 </html>
